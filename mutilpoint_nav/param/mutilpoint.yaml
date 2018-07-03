@@ -1,0 +1,49 @@
+waypoints:
+  - name: 0
+    frame_id: map
+    pose:
+      position:
+        x: -0.03747475118086582
+        y: -1.528685905884625
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.7110738662166547
+        w: 0.7031173136708405
+  - frame_id: map
+    name: 1
+    pose:
+      orientation:
+        x: 0
+        y: 0
+        z: -0.4752665241284261
+        w: 0.8798418784320761
+      position:
+        x: 0.9302054159378448
+        y: -4.353663147478386
+        z: 0
+  - name: 2
+    frame_id: map
+    pose:
+      position:
+        x: 2.108517916061974
+        y: -5.365615937785631
+        z: 0
+      orientation:
+        x: 0
+        y: 0
+        z: -0.3616755796774998
+        w: 0.9323040142919822
+  - name: 3
+    pose:
+      position:
+        x: 5.662105023220859
+        z: 0
+        y: -2.229320074851217
+      orientation:
+        z: 0.4178256985823997
+        x: 0
+        y: 0
+        w: 0.9085272068596127
+    frame_id: map
