@@ -1,0 +1,5 @@
+<launch>
+ <node pkg="getpose" type="lookupPose" name="listener" output="screen"/>
+  <param name="target_frame" value="odom"/>
+  <param name="source_frame" value="base_footprint"/>
+</launch>

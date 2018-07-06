@@ -1,0 +1,17 @@
+<launch>
+   <node name="agv_updown" pkg="agv_control" type="agv_arm" output="screen"/>
+
+   <arg name="KP" default="2.3"/> <!--2.3   2   1.8  -->
+   <arg name="KI" default="0"/> <!--0   0   0  -->
+   <arg name="KD" default="0"/> <!--0   0   0  -->
+   <arg name="linear_x" default="0.1"/>
+
+<!--
+  <node name="agv_control" pkg="agv_control" type="agv_control" output="screen"/>
+   <param name="KP" value="$(arg KP)"/>
+   <param name="KI" value="$(arg KI)"/>
+   <param name="KD" value="$(arg KD)"/>
+   <param name="linear_x" value="$(arg linear_x)"/>
+-->
+
+</launch>

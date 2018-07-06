@@ -1,8 +1,8 @@
-/****************************************
+/************************************************
       Date:2018-06-20
       Author:Peakzuo
-      Decribe:MutilPOINT_NAV
-****************************************/
+      Decribe:MutilPOINT_NAV,READ KEYBOARD_VALUE
+*************************************************/
 #include "../include/Mutilpoint_nav/Mutilpoint.h"
 
 //constructor

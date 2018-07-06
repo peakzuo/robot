@@ -1,0 +1,5 @@
+<launch>
+ <node name="laser_pose" pkg="laser_pose" type="laser_pose" output="screen"/>
+    <param name="odom_frame"  value="odom"/>
+    <param name="map_frame" value="map"/>
+</launch>

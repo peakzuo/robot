@@ -1,0 +1,15 @@
+<launch>
+  <!--node name="send_velocity" pkg="leishen_node" type="send_velocity"/-->
+  <node name="ls_node" pkg="ls_node" type="ls_node" output="screen"/>
+
+  <node pkg="nodelet" type="nodelet" name="mobile_base_nodelet_manager" args="manager"/>
+
+  <!-- velocity commands multiplexer -->
+  <node pkg="nodelet" type="nodelet" name="cmd_vel_mux" args="load yocs_cmd_vel_mux/CmdVelMuxNodelet mobile_base_nodelet_manager">
+    <param name="yaml_cfg_file" value="$(find leishen_node)/param/mux.yaml"/>
+    <remap from="cmd_vel_mux/output" to="mobile_base/commands/velocity"/>
+  </node>
+
+
+  <node pkg="tf" type="static_transform_publisher" name="laser_footprint" args="-0.1123 0 0.23 1.570796 0 0 base_footprint base_laser_link 100" />
+</launch>

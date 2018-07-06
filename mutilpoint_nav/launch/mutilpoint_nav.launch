@@ -1,0 +1,3 @@
+<launch>
+  <node pkg="mutilpoint_nav" type="MutilPoint_nav_release" name="Mutilpoint_nav" output="screen"/>
+</launch>

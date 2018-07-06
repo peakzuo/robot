@@ -26,5 +26,9 @@ include_directories(
 
 set(EXECUTABLE_OUTPUT_PATH /home/leishen/catkin_zz/devel/lib/mutilpoint_nav)
 
-add_executable(MutilPoint_nav src/Mutilpoint_nav.cpp src/yaml_parser.cpp)
-target_link_libraries(MutilPoint_nav  ${catkin_LIBRARIES} yaml-cpp)
+#add_executable(MutilPoint_nav src/Mutilpoint_nav.cpp src/yaml_parser.cpp)
+#target_link_libraries(MutilPoint_nav  ${catkin_LIBRARIES} yaml-cpp)
+
+
+add_executable(MutilPoint_nav_release src/mutilpoint_nav_release.cpp src/yaml_parser.cpp)
+target_link_libraries(MutilPoint_nav_release  ${catkin_LIBRARIES} yaml-cpp)
