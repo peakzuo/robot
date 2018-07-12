@@ -1,0 +1,11 @@
+<launch>
+  <node name="clc" pkg="clc" type="clc">
+    <!--angular control-->
+    <param name="vi" value="0.2"/>
+    <param name="r" value="0.2"/>
+    <!--linear control-->
+    <param name="kv" value="0.3"/>
+    <param name="vmax" value="0.4"/>
+    <param name="vmin" value="0.2"/>
+  </node>
+</launch>
